@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/efbe36c208.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Ayan_Images/Logo.png" alt="Ayan Samai Logo" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer & ML Enginer</p>
+                <h1>Hi, I'm <span> Ayan Samai</span><br> From West Bengal, India</h1>
+                
+            </div>
+        </div>
+    </div>
+<!-- --------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="Ayan_Images/User.png" ></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I’m Ayan Samai, a developer with a strong foundation in frontend engineering, full-stack development, and artificial intelligence. I approach technology with a clear mindset: understand the fundamentals deeply, think logically, and build things that actually work.
+                        <br>I value clarity over complexity and purpose over hype. Whether I’m designing clean user interfaces, building end-to-end applications, or working with data and machine learning models, my focus remains the same — structured thinking, efficient solutions, and continuous improvement.
+                        <br>I don’t believe in shortcuts or surface-level knowledge. I question assumptions, learn how systems work under the hood, and turn ideas into reliable, scalable solutions. For me, good development isn’t just about writing code — it’s about solving real problems with precision, discipline, and intent.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                       <ul>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>ML Engineer</span><br>Focused on fundamentals,<br>logic, and real-world impact.</li>
+                       </ul> 
+                    </div>
+                    <div class="tab-contents" id="experience">
+                       <ul>
+                        <li><span>Full-stack developer Intern</span><br> at Prasunet Company (15 March 2025 to 30 April 2025)</li>
+                        <li><span>Hackathon Participant</span><br>Samsung Innovation Campus</li>
+                        <li><span>Deloitte Data Analytics Virtual Experience</span><br>Completed hands-on tasks in data analysis, visualization, and business insights.</li>
+                       </ul> 
+                    </div>
+                    <div class="tab-contents" id="education">
+                       <ul>
+                        <li><span>2023–Present</span><br>B.Tech CSE (Data Science), Brainware University</li>
+                        
+                       </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------Services---------- -->
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Designing and developing responsive, 
+                        user-focused websites using HTML, CSS, JavaScript, 
+                        and modern frontend practices.
+                    </p>
+                    <a href="https://www.geeksforgeeks.org/web-tech/web-technology/">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-sharp fa-solid fa-comment-nodes"></i>
+                    <h2>Frontend Engineering</h2>
+                    <p>Building clean, interactive user interfaces with structured layouts, 
+                        accessibility in mind, and performance-oriented code.
+                    </p>
+                    <a href="https://www.w3schools.com/whatis/whatis_frontenddev.asp">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>Developing basic end-to-end applications with frontend integration, 
+                        backend logic, and database connectivity.
+                    </p>
+                    <a href="https://www.geeksforgeeks.org/blogs/what-is-full-stack-development/">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Data Analysis & ML (Foundational)</h2>
+                    <p>Analyzing datasets, visualizing insights, 
+                        and building basic machine learning models 
+                        using Python, NumPy, Pandas, and scikit-learn.
+                    </p>
+                    <a href="https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ------Portfolio------ -->
+<div class="work-list" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+    <!-- Project 1 -->
+            <a href="https://dayanamic-dashboard-drag-and-drop.netlify.app/"
+                target="_blank"
+                class="work">
+                <img src="https://images.klipfolio.com/website/public/bf9c6fbb-06bf-4f1d-88a7-d02b70902bd1/data-dashboard.png"
+                    alt="Dynamic Dashboard Project">
+                <div class="layer">
+                    <h3>Dynamic Dashboard</h3>
+                    <p>Drag & drop, customizable analytics dashboard</p>
+                </div>
+            </a>
+
+    <!-- Project 2 -->
+            <a href="#"
+            class="work">
+                <img src="https://images.klipfolio.com/website/public/1cfe3c5c-2b91-45b1-9c8c-45a64f7c5c6a/travel-dashboard.png"
+                    alt="Travel Agency Website">
+                <div class="layer">
+                    <h3>Travel Agency Website</h3>
+                    <p>Modern travel booking & destination showcase</p>
+                </div>
+            </a>
+
+    <!-- Project 3 -->
+        <a href="#"class="work">
+            <img src="https://images.klipfolio.com/website/public/8a0e6fd4-5c8a-4c7f-b0e0-ecb07a44a8e0/news-dashboard.png"
+                alt="AI Fake News Detection">
+            <div class="layer">
+                <h3>AI Fake News Detection</h3>
+                <p>ML-based system to detect fake & real news</p>
+            </div>
+        </a>
+
+    <!-- Project 4 -->
+        <a href="#"class="work">
+            <img src="https://images.klipfolio.com/website/public/3e8e8e5c-92e3-4c5f-8f88-5b6c4b21e9e5/healthcare-dashboard.png"alt="AI Healthcare System">
+            <div class="layer">
+                <h3>AI for Healthcare</h3>
+                <p>Disease prediction & healthcare analytics</p>
+            </div>
+        </a>
+
+    <!-- Project 5 (Placeholder for future idea) -->
+        <a href="#"class="work">
+            <img src="https://images.klipfolio.com/website/public/4e2cfc9a-2a3f-4e66-9f54-3a9cb69bde02/saas-dashboard.png"
+             alt="Upcoming Project">
+            <div class="layer">
+                <h3>Upcoming Project</h3>
+                <p>New idea in progress</p>
+            </div>
+        </a>
+    <!-- Project 6 -->
+        <a href="#"
+            class="work">
+            <img src="https://images.klipfolio.com/website/public/5a4c8a3e-8b6e-4e8c-9c65-2f6d4f1b9c21/ai-dashboard.png"
+             alt="AI Based Analytics System">
+            <div class="layer">
+                <h3>AI Analytics Platform</h3>
+                <p>Data-driven insights using AI & ML models</p>
+            </div>
+        </a>
+
+        <div class="see-more-wrapper">
+            <a href="#" class="btn">See More</a>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- --------Contact--------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-brands fa-telegram"></i>ayansamai14@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9647203685</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/asik.roy.5070"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/samaiayan/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ayan-samai-b0a181360/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/AyanCodder05"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Ayan_Images/My_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">
+                        Submit
+                    </button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>© 2025 Ayan Samai.<i class="fa-solid fa-heart"></i> All rights reserved.</p>
+
+    </div>
+</div>
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right="0"
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxt-GOnKXFZcFos7vaiG-hie9tFrPy9freOHryujidKd6dA7N6Imjq3StQeAd7HWqpk/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById('msg')
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
